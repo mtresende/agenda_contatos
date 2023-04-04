@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda de contatos</h1>
+        <h2>Adicione um contato:</h2>
+        <form id="form-contato">
+            <input id="nome-contato" type="text" required placeholder="Nome">
+            <input id="numero-contato" type="number" maxLength="11" required placeholder="Número">
+            <button type="submit">Adicionar</button>
+        </form>
+        <p class="error-numero">Um contato com esse número já foi adicionado</p>
+        <p class="error-nome">Um contato com esse nome já foi adicionado</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+</body>
+<script src="main.js"></script>
+</html>
